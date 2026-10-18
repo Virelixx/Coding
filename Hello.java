@@ -75,3 +75,46 @@
 
 //     }
 // }
+
+//3rd striver sheet question
+
+import java.util.Scanner;                                            // this input condition is made by me not in striver sheet 
+class Hello {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number of rows");
+    int n = sc.nextInt();
+    int i,j;
+    {
+        for(i=1;i<=n;i++)
+        {
+            for(j=1;j<=i;j++)
+            {
+            System.out.print(j);
+            }
+        System.out.println();
+        }
+    System.out.println();       
+    }
+       
+    }
+}
+
+//4th striver sheet question
+
+class Solution {
+    public void pattern4(int n) {
+    int i,j;
+    {
+        for(i=1;i<=n;i++)
+        {
+            for(j=1;j<=i;j++)
+            {
+                System.out.print(i);
+            }
+        System.out.println();
+        }
+    }
+
+    }
+}
