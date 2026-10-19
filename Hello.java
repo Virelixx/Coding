@@ -143,3 +143,22 @@ class Hello{
 
     }
 }
+
+//6th striver sheet question
+
+class Solution {
+    public void pattern6(int n) {
+    int i,j;
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=n-i+1;j++)
+        {
+            System.out.print(j);
+        }
+        System.out.println();
+    }
+
+    }
+}
+
+//7th striver sheet question
