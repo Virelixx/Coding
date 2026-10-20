@@ -121,44 +121,105 @@
 
 //5th striver sheet question
 
-import java.util.Scanner;
-class Hello{
+// import java.util.Scanner;
+// class Hello{
 
-    public static void main (String[]agrs){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of rows and columns for inverted star pattern");
-        int n = sc.nextInt();
-        int i,j;
-        {
-            for(i=n;i>=1;i--)
-            {
-                for(j=1;j<=i;j++)
-                {
-                    System.out.print("*");
+//     public static void main (String[]agrs){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the number of rows and columns for inverted star pattern");
+//         int n = sc.nextInt();
+//         int i,j;
+//         {
+//             for(i=n;i>=1;i--)
+//             {
+//                 for(j=1;j<=i;j++)
+//                 {
+//                     System.out.print("*");
 
-                }
-                System.out.println();
-            }
-        }
+//                 }
+//                 System.out.println();
+//             }
+//         }
 
-    }
-}
+//     }
+// }
 
 //6th striver sheet question
 
-class Solution {
-    public void pattern6(int n) {
-    int i,j;
-    for(i=1;i<=n;i++)
-    {
-        for(j=1;j<=n-i+1;j++)
-        {
-            System.out.print(j);
-        }
-        System.out.println();
-    }
+// class Solution {
+//     public void pattern6(int n) {
+//     int i,j;
+//     for(i=1;i<=n;i++)
+//     {
+//         for(j=1;j<=n-i+1;j++)
+//         {
+//             System.out.print(j);
+//         }
+//         System.out.println();
+//     }
 
-    }
-}
+//     }
+// }
 
 //7th striver sheet question
+
+// import java.util.Scanner;
+// class Hello{
+//     public static void main(String[]args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Eneter the value on n");
+//         int n = sc.nextInt();
+//         int i,j;
+//         for(i=1;i<=n;i++)
+//         {
+//             for(j=1;j<=n-i;j++)
+//             {
+//                 System.out.print(" ");
+//             }
+//             for(j=1;j<=2*i-1;j++)
+//             {
+//                 System.out.print("*");
+//             }
+            
+//             System.out.println();  
+//         }
+
+//     }
+// }
+
+import java.util.Scanner;
+class Hello{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Eneter the value on n");
+        int n = sc.nextInt();
+        int i,j;
+        for(i=1;i<=n;i++){
+            for(j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            int spaces = 2*(n-i);
+            for(j=1;j<=spaces;j++)
+            {
+                System.out.print(" ");
+            }
+            for(j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(i=n;i>=1;i--){
+            for(j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            int spaces = 2*(n-i);
+            for(j=1;j<=spaces;j++)
+            {
+                System.out.print(" ");
+            }
+            for(j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }}
