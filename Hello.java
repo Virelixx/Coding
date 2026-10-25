@@ -411,4 +411,122 @@ class Solution {
         }
 
     }
+ 
 }
+
+// 12th Striver Sheet Question
+
+class Solution12 {
+    public void pattern12(int n) {
+        int i,j;
+        for(i=1;i<=n;i++)
+        {
+            for(j=1;j<=i;j++)
+            {
+                System.out.print(j);
+            }
+            int spaces = 2*(n-i);
+            for(j=1;j<=spaces;j++)
+            {
+                System.out.print(" ");
+            }
+            for(j=i;j>=1;j--)
+            {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+}
+// 13th Striver Sheet Question
+
+class Solution13 {
+    public void pattern13(int n) {
+        int i,j;
+        int num = 1;
+        for(i=1;i<=n;i++)
+        {
+            for(j=1;j<=i;j++)
+            {
+                System.out.print(num+" ");
+                num++;
+            }
+            System.out.println();
+        }
+    }
+}
+
+// 14th Striver Sheet Question
+
+class Solution14 {
+    public void pattern14(int n) {
+        int i,j;
+        for(i=1;i<=n;i++)
+        {
+            for(j=0;j<i;j++)
+            {
+                System.out.print( (char)('A'+j));
+            }
+            System.out.println();
+        }
+
+
+    }
+}
+// 15th Striver Sheet Question
+
+class Solution15 {
+    public void pattern15(int n) {
+        int i,j;
+        for(i=n;i>=1;i--)
+        {
+            for(j=0;j<i;j++)
+            {
+                System.out.print((char)('A' + j));
+            }
+            System.out.println();
+        }
+
+    }
+}
+// 16th Striver Sheet Question
+
+class Solution16 {
+    public void pattern16(int n) {
+        int i,j;
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<=i;j++)
+            {
+                System.out.print((char)('A'+i));
+            }
+            System.out.println();
+        }
+    }
+
+}
+
+// 17th Striver Sheet Question
+
+class Solution17 {
+    public void pattern17(int n) {
+        int i,j;
+        for(i=1;i<=n;i++)
+        {
+            for(j=1;j<=n-i;j++)
+            {
+                System.out.print(" ");
+            }
+            for(j=0;j<=i-1;j++)
+            {
+                System.out.print((char)('A'+j));
+            }
+            for(j=i-2;j>=0;j--)
+            {
+                System.out.print((char)('A'+j));
+            }
+            System.out.println();
+        }
+    }
+}
+
