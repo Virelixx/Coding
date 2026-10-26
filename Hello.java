@@ -530,3 +530,18 @@ class Solution17 {
     }
 }
 
+// 18th Striver Sheet Question
+class Solution18 {
+    public void pattern18(int n) {
+        int i,j;
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<=i;j++)
+            {
+                System.out.print((char)('A'+(n-i-1)+j)+" ");
+            }
+            System.out.println();
+        }
+
+    }
+}
