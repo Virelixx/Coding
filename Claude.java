@@ -78,25 +78,64 @@
 
 //Pattern 4: hollow square (N = 5)
 
-public class Claude{
-    public static void main(String[]args){
-        int i,j;
-        int n = 5;
-        for(i=1;i<=n;i++)
-        {
-            for(j=1;j<=n;j++)
-            {
-                if(i==1||i==n||j==1||j==n)
-                {
-                    System.out.print("*");
-                }
-                else
-                {
-                    System.out.print(" ");
-                }
-            }
-            System.out.println();
-        }
+// public class Claude{
+//     public static void main(String[]args){
+//         int i,j;
+//         int n = 5;
+//         for(i=1;i<=n;i++)
+//         {
+//             for(j=1;j<=n;j++)
+//             {
+//                 if(i==1||i==n||j==1||j==n)
+//                 {
+//                     System.out.print("*");
+//                 }
+//                 else
+//                 {
+//                     System.out.print(" ");
+//                 }
+//             }
+//             System.out.println();
+//         }
         
+//     }
+// }
+
+
+
+//Problem 5: Reverse a number
+
+// public class Claude{
+//     public static void main(String[]args){
+//         int n = 1234;
+//         int rev = 0;
+//         while(n>0)
+//         {
+//             int digit = n % 10;
+//             rev = rev * 10 + digit;
+//             n = n / 10;
+
+//         }
+//         System.out.print(rev);
+//     }
+// }
+
+//Problem 6: Palindrome of a number
+
+public class Claude {
+    public static void main(String[] args) {
+        int n = 121;
+        int original = n;
+        int rev = 0;
+        while (n > 0) {
+            int digit = n % 10;
+            rev = rev * 10 + digit;
+            n = n / 10;
+        }
+        if (rev == original) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not a palindrome");
+        }
     }
 }
