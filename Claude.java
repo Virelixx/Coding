@@ -122,20 +122,36 @@
 
 //Problem 6: Palindrome of a number
 
-public class Claude {
-    public static void main(String[] args) {
-        int n = 121;
-        int original = n;
-        int rev = 0;
-        while (n > 0) {
-            int digit = n % 10;
-            rev = rev * 10 + digit;
-            n = n / 10;
+// public class Claude {
+//     public static void main(String[] args) {
+//         int n = 121;
+//         int original = n;
+//         int rev = 0;
+//         while (n > 0) {
+//             int digit = n % 10;
+//             rev = rev * 10 + digit;
+//             n = n / 10;
+//         }
+//         if (rev == original) {
+//             System.out.println("Palindrome");
+//         } else {
+//             System.out.println("Not a palindrome");
+//         }
+//     }
+// }
+
+
+//Problem 7: Factorial of a number
+
+public class Claude{
+    public static void main (String[]args){
+        int n = 5;
+        int fact = 1;
+        for(int i=1;i<=n;i++)
+        {
+            fact = fact*i;
+            
         }
-        if (rev == original) {
-            System.out.println("Palindrome");
-        } else {
-            System.out.println("Not a palindrome");
-        }
+        System.out.println(fact);
     }
 }
