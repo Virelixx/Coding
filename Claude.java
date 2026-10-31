@@ -143,15 +143,64 @@
 
 //Problem 7: Factorial of a number
 
-public class Claude{
-    public static void main (String[]args){
-        int n = 5;
-        int fact = 1;
-        for(int i=1;i<=n;i++)
-        {
-            fact = fact*i;
+// public class Claude{
+//     public static void main (String[]args){
+//         int n = 5;
+//         int fact = 1;
+//         for(int i=1;i<=n;i++)
+//         {
+//             fact = fact*i;
             
+//         }
+//         System.out.println(fact);
+//     }
+// }
+
+
+//Problem 8: Prime check
+
+// public class Claude{
+//     public static void main (String[]args){
+//         int n = 13;
+//         boolean isPrime = true;
+//         if (n < 2) {
+//             isPrime = false;
+//         }
+//         for (int i = 2; i < n; i++) {
+//             if (n % i == 0) {
+//                 isPrime = false;
+//                 break;
+//             }
+//         }
+//         System.out.println(isPrime);
+//     }
+// }
+
+
+
+//Problem 9: DIAMOND PATTERN
+public class Claude {
+    public static void main(String[] args) {
+        int n = 5;
+        // top half: rows 1 to n
+        for (int i = 1; i <= n; i++) {
+            for (int s = 1; s <= n - i; s++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= 2 * i - 1; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
-        System.out.println(fact);
+        // bottom half: rows n-1 down to 1
+        for (int i = n - 1; i >= 1; i--) {
+            for (int s = 1; s <= n - i; s++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= 2 * i - 1; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }

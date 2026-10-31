@@ -651,3 +651,24 @@ class Solution21 {
         }
     }
 }
+
+
+// 22th Striver Sheet Question
+class Solution22 {
+    public void pattern22(int n) {
+        int size = 2*n-1;
+        int c = n-1;
+        int i,j;
+        for (i=0;i<size;i++)
+        {
+            for(j=0;j<size;j++)
+            {
+                int val = Math.max(Math.abs(i-c),Math.abs(j-c))+1;
+                System.out.print(val+" ");
+
+            }
+            System.out.println();
+        }
+
+    }
+}
