@@ -672,3 +672,29 @@ class Solution22 {
 
     }
 }
+
+
+// Count all digit of a number:
+
+class Sum {
+    public void sum(int n ){
+        n = 14;
+        int length = String.valueOf(n).length();
+        System.out.println(length);
+    }
+}
+
+
+// Reverse of Number
+class Solution23 {
+    public int reverseNumber(int n) {
+        int rev = 0;
+        while(n>0){
+            int digit = n%10;
+            rev = rev*10 + digit;
+            n = n/10;
+        }
+        System.out.println(rev);
+        return rev;
+    }
+}
