@@ -204,3 +204,69 @@ public class Claude {
         }
     }
 }
+
+// Question 1 (Basic): Largest element
+
+// Problem: find the largest number in an array.
+
+// {3, 8, 1, 9, 4} gives 9
+// {-5, -2, -9} gives -2
+
+class solution{
+    public void largest(int i){
+        int[] arr = {3,8,1,9,4};
+        int max = arr[0];
+        for(i=1;i < arr.length, i++)
+        {
+            if(arr[i]>max)
+            {
+                max = arr[i];
+            }
+        }
+        System.out.println(max);
+    }
+}
+
+// Question 2 (Basic): Smallest and largest in one pass
+
+// Problem: find both the smallest and largest values in one loop.
+
+// {7, 2, 9, 4} gives min 2, max 9
+
+class solution2{
+    public void largest(int i){
+        int[] arr = {3,8,1,9,4};
+        int max = arr[0];
+        int min = arr[0];
+        for(i=1;i<arr.length;i++)
+        {
+            if(arr[i]<min)min = arr[i];
+            if(arr[i]>max)max = arr[i];
+        }
+        System.out.print("Min : "+min+" , Max : " + max);
+    }
+}
+
+// Question 3 (Basic): Linear search
+
+// Problem: return the index of x in the array, or -1 if it isn’t there.
+
+// {4, 7, 1, 9}, x = 1 gives 2
+// {4, 7, 1, 9}, x = 5 gives -1
+
+class solution3{
+    public void largest(int i){
+        int[] arr = {3,8,1,9,4};
+        int x =1;
+        int index = -1;
+        for(i=0;i<arr.length;i++)
+        {
+            if(arr[i]==x)
+            {
+                index = i;
+                break;
+            }
+        }
+        System.out.print(index);
+    }
+}
