@@ -736,4 +736,3 @@ class Solution24 {
     }
 }
 
-// RETURN THE LARGEST DIGIT IN THE NUMBER
