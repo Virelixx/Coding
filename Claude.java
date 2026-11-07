@@ -270,3 +270,22 @@ class solution3{
         System.out.print(index);
     }
 }
+
+
+// Problem: find the greatest common divisor of two numbers, the largest number that divides both.
+
+// 12, 18 gives 6
+// 7, 13 gives 1
+// 100, 75 gives 25
+
+class solution4{
+    public static void main(String[] args){
+        int a = 12, b = 18;
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        System.out.println(a);
+    }
+}

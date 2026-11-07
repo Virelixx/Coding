@@ -1,17 +1,11 @@
 class practice{
     public static void main(String[] args){
-        int i;
-        int[] arr = {3,8,1,9,4};
-        int x =1;
-        int index = -1;
-        for(i=0;i<arr.length;i++)
-        {
-            if(arr[i]==x)
-            {
-                index = i;
-                break;
-            }
+        int a = 12, b = 18;
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
         }
-        System.out.print(index);
+        System.out.println(a);
     }
 }
