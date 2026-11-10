@@ -1,13 +1,29 @@
+
 public class practice {
     public static void main(String[] args) {
-        System.out.println("Java Version: " + System.getProperty("java.version"));
 
-        int a = 12, b = 18;
-        while (b != 0) {
-            int temp = b;
-            b = a % b;
-            a = temp;
+        int[] arr = {12, 35, 1, 10, 34, 1};
+
+        int largest = arr[0];
+        int second = Integer.MIN_VALUE;
+
+        for (int i = 1; i < arr.length; i++) {
+
+            if (arr[i] > largest) {
+                second = largest;
+                largest = arr[i];
+            }
+            else if (arr[i] < largest && arr[i] > second) {
+                second = arr[i];
+            }
         }
-        System.out.println("GCD: " + a);
+
+        System.out.println("Largest: " + largest);
+
+        if (second == Integer.MIN_VALUE) {
+            System.out.println("No second largest");
+        } else {
+            System.out.println("Second Largest: " + second);
+        }
     }
 }
