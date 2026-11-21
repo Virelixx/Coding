@@ -1,29 +1,20 @@
-
+import java.util.Scanner;
 public class practice {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size =  sc.nextInt();
+        int numbers[] = new int[size];
 
-        int[] arr = {12, 35, 1, 10, 34, 1};
-
-        int largest = arr[0];
-        int second = Integer.MIN_VALUE;
-
-        for (int i = 1; i < arr.length; i++) {
-
-            if (arr[i] > largest) {
-                second = largest;
-                largest = arr[i];
-            }
-            else if (arr[i] < largest && arr[i] > second) {
-                second = arr[i];
-            }
+        for(int i= 0;i<size ; i++)
+        {
+            numbers[i] = sc.nextInt();
         }
 
-        System.out.println("Largest: " + largest);
+        int x = sc.nextInt();
 
-        if (second == Integer.MIN_VALUE) {
-            System.out.println("No second largest");
-        } else {
-            System.out.println("Second Largest: " + second);
+        for(int i=0;i<numbers.length;i++)
+        {
+            System.out.println(numbers[i]);
         }
     }
 }
