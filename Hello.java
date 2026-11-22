@@ -296,7 +296,7 @@
 //     }
 // }
 
-
+import java.util.Scanner;
 class Hello{
     public static void main(String[]args){
     int i,j;
@@ -733,5 +733,84 @@ class Solution24 {
         }
         return rev == original;
    
+    }
+}
+
+// Array input from user and search for given x and print the index :
+
+class practice1{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size =  sc.nextInt();
+        int numbers[] = new int[size];
+
+        for(int i= 0;i<size ; i++)
+        {
+            numbers[i] = sc.nextInt();
+        }
+
+        int x = sc.nextInt();
+
+        for(int i=0;i<numbers.length;i++)
+        {
+            System.out.println(numbers[i]);
+        }
+    }
+}
+
+
+// 2D ARRAY 
+class practice2{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+       int rows = sc.nextInt();
+       int cols = sc.nextInt();
+
+       int[][]numbers = new int[rows][cols];
+       for(int i = 0; i<rows ; i++)
+        {
+            for(int j=0 ;j<cols;j++)
+            {
+                numbers[i][j] = sc.nextInt();
+            }
+        }
+        
+        for(int i = 0; i<rows;i++)
+        {
+            for(int j=0;j<cols;j++)
+            {
+                System.out.print(numbers[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+//Tkae matrix as input search for x an dprint the index
+class practice3{
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       int rows = sc.nextInt();
+       int cols = sc.nextInt();
+
+       int[][]numbers = new int[rows][cols];
+       for(int i = 0; i<rows ; i++)
+        {
+            for(int j=0 ;j<cols;j++)
+            {
+                numbers[i][j] = sc.nextInt();
+            }
+        }
+        
+        int x = sc.nextInt();
+        for(int i=0;i<rows;i++)
+        {
+            for(int j = 0;j<cols;j++)
+            {
+                if(numbers[i][j] == x){
+                    System.out.println("Found at "+i+ " "+j);}
+            }
+        }
     }
 }

@@ -1,20 +1,27 @@
 import java.util.Scanner;
-public class practice {
+public class practice{
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int size =  sc.nextInt();
-        int numbers[] = new int[size];
+       Scanner sc = new Scanner(System.in);
+       int rows = sc.nextInt();
+       int cols = sc.nextInt();
 
-        for(int i= 0;i<size ; i++)
+       int[][]numbers = new int[rows][cols];
+       for(int i = 0; i<rows ; i++)
         {
-            numbers[i] = sc.nextInt();
+            for(int j=0 ;j<cols;j++)
+            {
+                numbers[i][j] = sc.nextInt();
+            }
         }
-
+        
         int x = sc.nextInt();
-
-        for(int i=0;i<numbers.length;i++)
+        for(int i=0;i<rows;i++)
         {
-            System.out.println(numbers[i]);
+            for(int j = 0;j<cols;j++)
+            {
+                if(numbers[i][j] == x){
+                    System.out.println("Found at "+i+ " "+j);}
+            }
         }
     }
 }
