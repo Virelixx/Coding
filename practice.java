@@ -1,28 +1,14 @@
 import java.util.Scanner;
 public class practice{
     public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
-       int rows = sc.nextInt();
-       int cols = sc.nextInt();
-
-       int[][]numbers = new int[rows][cols];
-       for(int i = 0; i<rows ; i++)
-        {
-            for(int j=0 ;j<cols;j++)
-            {
-                numbers[i][j] = sc.nextInt();
-            }
-        }
-        
-        int x = sc.nextInt();
-        for(int i=0;i<rows;i++)
-        {
-            for(int j = 0;j<cols;j++)
-            {
-                if(numbers[i][j] == x){
-                    System.out.println("Found at "+i+ " "+j);}
-            }
-        }
+       int a[] = {1 , 2, 4, 6, 8, 3, 5};
+       int largest = a[0]; 
+       for(int i=0;i<a.length;i++)
+       {
+        if (a[i]>largest)
+            largest = a[i];
+       }
+       System.out.print(largest);
+       
     }
 }
-/

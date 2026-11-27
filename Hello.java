@@ -787,7 +787,7 @@ class practice2{
 }
 
 
-//Tkae matrix as input search for x an dprint the index
+//Tkae matrix as input search for x an dprint the index\
 class practice3{
     public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
